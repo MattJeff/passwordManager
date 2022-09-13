@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E31A06A28CE4095005655D8 /* UpdateAcount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31A06928CE4095005655D8 /* UpdateAcount.swift */; };
+		9E31A06D28CE41EF005655D8 /* Acount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31A06C28CE41EF005655D8 /* Acount.swift */; };
+		9E31A06F28CF2FC4005655D8 /* DisplayAcount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31A06E28CF2FC4005655D8 /* DisplayAcount.swift */; };
+		9E31A07128CF33D4005655D8 /* AcountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31A07028CF33D4005655D8 /* AcountInfo.swift */; };
+		9E31A07428CF3600005655D8 /* GenerateNiew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31A07328CF3600005655D8 /* GenerateNiew.swift */; };
+		9E31A07728CF506E005655D8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31A07628CF506E005655D8 /* Home.swift */; };
+		9E3F10A728CCA75D00401003 /* HeaderTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10A628CCA75D00401003 /* HeaderTitle.swift */; };
+		9E3F10AA28CCAA2400401003 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10A928CCAA2400401003 /* InformationView.swift */; };
+		9E3F10CA28CCAFE000401003 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E3F10B728CCAFE000401003 /* Poppins-Regular.ttf */; };
+		9E3F10D428CD9B9600401003 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10D328CD9B9600401003 /* Register.swift */; };
+		9E3F10D628CDA45600401003 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10D528CDA45600401003 /* LoginView.swift */; };
+		9E3F10D828CDA6CF00401003 /* ForgotPassWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10D728CDA6CF00401003 /* ForgotPassWordView.swift */; };
+		9E3F10DA28CDAA0A00401003 /* ResetPassWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10D928CDAA0A00401003 /* ResetPassWordView.swift */; };
+		9E3F10DD28CE2B8C00401003 /* Profile+changePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10DC28CE2B8C00401003 /* Profile+changePassword.swift */; };
+		9E3F10DF28CE2CBC00401003 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10DE28CE2CBC00401003 /* EditProfile.swift */; };
+		9E3F10E128CE31DC00401003 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10E028CE31DC00401003 /* Profile.swift */; };
+		9E3F10E428CE393400401003 /* SectionPtofile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10E328CE393400401003 /* SectionPtofile.swift */; };
+		9E3F10E728CE3BE100401003 /* AddNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10E628CE3BE100401003 /* AddNew.swift */; };
+		9EF62E6328CB4728002853EA /* PassWordManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E6228CB4728002853EA /* PassWordManagerApp.swift */; };
+		9EF62E6528CB4728002853EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E6428CB4728002853EA /* ContentView.swift */; };
+		9EF62E6728CB4729002853EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EF62E6628CB4729002853EA /* Assets.xcassets */; };
+		9EF62E6A28CB4729002853EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EF62E6928CB4729002853EA /* Preview Assets.xcassets */; };
+		9EF62E7428CB472A002853EA /* PassWordManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E7328CB472A002853EA /* PassWordManagerTests.swift */; };
+		9EF62E7E28CB472A002853EA /* PassWordManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E7D28CB472A002853EA /* PassWordManagerUITests.swift */; };
+		9EF62E8028CB472A002853EA /* PassWordManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E7F28CB472A002853EA /* PassWordManagerUITestsLaunchTests.swift */; };
+		9EF62E9028CB594C002853EA /* LitlePlaineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E8F28CB594C002853EA /* LitlePlaineButton.swift */; };
+		9EF62E9228CB5A48002853EA /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E9128CB5A48002853EA /* Utiles.swift */; };
+		9EF62E9428CB5F4B002853EA /* modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E9328CB5F4B002853EA /* modifier.swift */; };
+		9EF62E9828CB62AF002853EA /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EF62E9628CB62AF002853EA /* BebasNeue-Regular.ttf */; };
+		9EF62E9D28CC8B4A002853EA /* StandarTexField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E9C28CC8B4A002853EA /* StandarTexField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EF62E7028CB4729002853EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EF62E5728CB4728002853EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EF62E5E28CB4728002853EA;
+			remoteInfo = PassWordManager;
+		};
+		9EF62E7A28CB472A002853EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EF62E5728CB4728002853EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EF62E5E28CB4728002853EA;
+			remoteInfo = PassWordManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E31A06928CE4095005655D8 /* UpdateAcount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAcount.swift; sourceTree = "<group>"; };
+		9E31A06C28CE41EF005655D8 /* Acount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acount.swift; sourceTree = "<group>"; };
+		9E31A06E28CF2FC4005655D8 /* DisplayAcount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayAcount.swift; sourceTree = "<group>"; };
+		9E31A07028CF33D4005655D8 /* AcountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountInfo.swift; sourceTree = "<group>"; };
+		9E31A07328CF3600005655D8 /* GenerateNiew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateNiew.swift; sourceTree = "<group>"; };
+		9E31A07628CF506E005655D8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9E3F10A628CCA75D00401003 /* HeaderTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitle.swift; sourceTree = "<group>"; };
+		9E3F10A928CCAA2400401003 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		9E3F10AC28CCAFE000401003 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		9E3F10AD28CCAFE000401003 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		9E3F10AE28CCAFE000401003 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		9E3F10AF28CCAFE000401003 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9E3F10B028CCAFE000401003 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		9E3F10B128CCAFE000401003 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		9E3F10B228CCAFE000401003 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		9E3F10B328CCAFE000401003 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		9E3F10B428CCAFE000401003 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		9E3F10B528CCAFE000401003 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		9E3F10B628CCAFE000401003 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		9E3F10B728CCAFE000401003 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		9E3F10B828CCAFE000401003 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		9E3F10B928CCAFE000401003 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		9E3F10BA28CCAFE000401003 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		9E3F10BB28CCAFE000401003 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		9E3F10BC28CCAFE000401003 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		9E3F10BD28CCAFE000401003 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		9E3F10BE28CCAFE000401003 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		9E3F10D328CD9B9600401003 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		9E3F10D528CDA45600401003 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9E3F10D728CDA6CF00401003 /* ForgotPassWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassWordView.swift; sourceTree = "<group>"; };
+		9E3F10D928CDAA0A00401003 /* ResetPassWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassWordView.swift; sourceTree = "<group>"; };
+		9E3F10DC28CE2B8C00401003 /* Profile+changePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+changePassword.swift"; sourceTree = "<group>"; };
+		9E3F10DE28CE2CBC00401003 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		9E3F10E028CE31DC00401003 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9E3F10E328CE393400401003 /* SectionPtofile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionPtofile.swift; sourceTree = "<group>"; };
+		9E3F10E628CE3BE100401003 /* AddNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNew.swift; sourceTree = "<group>"; };
+		9EF62E5F28CB4728002853EA /* PassWordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassWordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF62E6228CB4728002853EA /* PassWordManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassWordManagerApp.swift; sourceTree = "<group>"; };
+		9EF62E6428CB4728002853EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9EF62E6628CB4729002853EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EF62E6928CB4729002853EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9EF62E6F28CB4729002853EA /* PassWordManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassWordManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF62E7328CB472A002853EA /* PassWordManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassWordManagerTests.swift; sourceTree = "<group>"; };
+		9EF62E7928CB472A002853EA /* PassWordManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassWordManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF62E7D28CB472A002853EA /* PassWordManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassWordManagerUITests.swift; sourceTree = "<group>"; };
+		9EF62E7F28CB472A002853EA /* PassWordManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassWordManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9EF62E8F28CB594C002853EA /* LitlePlaineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitlePlaineButton.swift; sourceTree = "<group>"; };
+		9EF62E9128CB5A48002853EA /* Utiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utiles.swift; sourceTree = "<group>"; };
+		9EF62E9328CB5F4B002853EA /* modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modifier.swift; sourceTree = "<group>"; };
+		9EF62E9628CB62AF002853EA /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
+		9EF62E9728CB62AF002853EA /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		9EF62E9A28CB62C7002853EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9EF62E9C28CC8B4A002853EA /* StandarTexField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandarTexField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EF62E5C28CB4728002853EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF62E6C28CB4729002853EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF62E7628CB472A002853EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E31A06828CE3FFD005655D8 /* Acount */ = {
+			isa = PBXGroup;
+			children = (
+				9E31A07228CF33DC005655D8 /* Component */,
+				9E31A06928CE4095005655D8 /* UpdateAcount.swift */,
+				9E31A06E28CF2FC4005655D8 /* DisplayAcount.swift */,
+				9E31A07328CF3600005655D8 /* GenerateNiew.swift */,
+			);
+			path = Acount;
+			sourceTree = "<group>";
+		};
+		9E31A06B28CE41E2005655D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E31A06C28CE41EF005655D8 /* Acount.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E31A07228CF33DC005655D8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				9E31A07028CF33D4005655D8 /* AcountInfo.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		9E31A07528CF505F005655D8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9E31A07828CF5072005655D8 /* Component */,
+				9E31A07628CF506E005655D8 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9E31A07828CF5072005655D8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		9E3F10A828CCAA0500401003 /* INFORMATION */ = {
+			isa = PBXGroup;
+			children = (
+				9E3F10A928CCAA2400401003 /* InformationView.swift */,
+			);
+			path = INFORMATION;
+			sourceTree = "<group>";
+		};
+		9E3F10AB28CCAFE000401003 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				9E3F10AC28CCAFE000401003 /* Poppins-ExtraLight.ttf */,
+				9E3F10AD28CCAFE000401003 /* Poppins-ThinItalic.ttf */,
+				9E3F10AE28CCAFE000401003 /* Poppins-ExtraLightItalic.ttf */,
+				9E3F10AF28CCAFE000401003 /* Poppins-BoldItalic.ttf */,
+				9E3F10B028CCAFE000401003 /* Poppins-Light.ttf */,
+				9E3F10B128CCAFE000401003 /* Poppins-Medium.ttf */,
+				9E3F10B228CCAFE000401003 /* Poppins-SemiBoldItalic.ttf */,
+				9E3F10B328CCAFE000401003 /* Poppins-ExtraBoldItalic.ttf */,
+				9E3F10B428CCAFE000401003 /* Poppins-ExtraBold.ttf */,
+				9E3F10B528CCAFE000401003 /* Poppins-BlackItalic.ttf */,
+				9E3F10B628CCAFE000401003 /* OFL.txt */,
+				9E3F10B728CCAFE000401003 /* Poppins-Regular.ttf */,
+				9E3F10B828CCAFE000401003 /* Poppins-LightItalic.ttf */,
+				9E3F10B928CCAFE000401003 /* Poppins-Bold.ttf */,
+				9E3F10BA28CCAFE000401003 /* Poppins-Black.ttf */,
+				9E3F10BB28CCAFE000401003 /* Poppins-Thin.ttf */,
+				9E3F10BC28CCAFE000401003 /* Poppins-SemiBold.ttf */,
+				9E3F10BD28CCAFE000401003 /* Poppins-Italic.ttf */,
+				9E3F10BE28CCAFE000401003 /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		9E3F10D228CD9B6400401003 /* Register_Login */ = {
+			isa = PBXGroup;
+			children = (
+				9E3F10D328CD9B9600401003 /* Register.swift */,
+				9E3F10D528CDA45600401003 /* LoginView.swift */,
+				9E3F10D728CDA6CF00401003 /* ForgotPassWordView.swift */,
+				9E3F10D928CDAA0A00401003 /* ResetPassWordView.swift */,
+			);
+			path = Register_Login;
+			sourceTree = "<group>";
+		};
+		9E3F10DB28CDAE3200401003 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9E3F10E228CE392300401003 /* Component */,
+				9E3F10DC28CE2B8C00401003 /* Profile+changePassword.swift */,
+				9E3F10DE28CE2CBC00401003 /* EditProfile.swift */,
+				9E3F10E028CE31DC00401003 /* Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9E3F10E228CE392300401003 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				9E3F10E328CE393400401003 /* SectionPtofile.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		9E3F10E528CE3BC100401003 /* AddNewAcount */ = {
+			isa = PBXGroup;
+			children = (
+				9E3F10E628CE3BE100401003 /* AddNew.swift */,
+			);
+			path = AddNewAcount;
+			sourceTree = "<group>";
+		};
+		9EF62E5628CB4728002853EA = {
+			isa = PBXGroup;
+			children = (
+				9EF62E6128CB4728002853EA /* PassWordManager */,
+				9E3F10AB28CCAFE000401003 /* Poppins */,
+				9EF62E9528CB62AF002853EA /* Bebas_Neue */,
+				9EF62E7228CB472A002853EA /* PassWordManagerTests */,
+				9EF62E7C28CB472A002853EA /* PassWordManagerUITests */,
+				9EF62E6028CB4728002853EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EF62E6028CB4728002853EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EF62E5F28CB4728002853EA /* PassWordManager.app */,
+				9EF62E6F28CB4729002853EA /* PassWordManagerTests.xctest */,
+				9EF62E7928CB472A002853EA /* PassWordManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EF62E6128CB4728002853EA /* PassWordManager */ = {
+			isa = PBXGroup;
+			children = (
+				9EF62E9A28CB62C7002853EA /* Info.plist */,
+				9E31A06B28CE41E2005655D8 /* Model */,
+				9EF62E8C28CB5856002853EA /* Views */,
+				9EF62E6228CB4728002853EA /* PassWordManagerApp.swift */,
+				9EF62E6428CB4728002853EA /* ContentView.swift */,
+				9EF62E6628CB4729002853EA /* Assets.xcassets */,
+				9EF62E6828CB4729002853EA /* Preview Content */,
+			);
+			path = PassWordManager;
+			sourceTree = "<group>";
+		};
+		9EF62E6828CB4729002853EA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9EF62E6928CB4729002853EA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9EF62E7228CB472A002853EA /* PassWordManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EF62E7328CB472A002853EA /* PassWordManagerTests.swift */,
+			);
+			path = PassWordManagerTests;
+			sourceTree = "<group>";
+		};
+		9EF62E7C28CB472A002853EA /* PassWordManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EF62E7D28CB472A002853EA /* PassWordManagerUITests.swift */,
+				9EF62E7F28CB472A002853EA /* PassWordManagerUITestsLaunchTests.swift */,
+			);
+			path = PassWordManagerUITests;
+			sourceTree = "<group>";
+		};
+		9EF62E8C28CB5856002853EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E31A07528CF505F005655D8 /* Home */,
+				9E3F10A828CCAA0500401003 /* INFORMATION */,
+				9E3F10DB28CDAE3200401003 /* Profile */,
+				9E3F10D228CD9B6400401003 /* Register_Login */,
+				9E3F10E528CE3BC100401003 /* AddNewAcount */,
+				9E31A06828CE3FFD005655D8 /* Acount */,
+				9EF62E8D28CB585E002853EA /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9EF62E8D28CB585E002853EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9EF62E9B28CC8B22002853EA /* CustomTextField */,
+				9EF62E8E28CB5867002853EA /* Buttons */,
+				9EF62E9128CB5A48002853EA /* Utiles.swift */,
+				9E3F10A628CCA75D00401003 /* HeaderTitle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9EF62E8E28CB5867002853EA /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				9EF62E8F28CB594C002853EA /* LitlePlaineButton.swift */,
+				9EF62E9328CB5F4B002853EA /* modifier.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		9EF62E9528CB62AF002853EA /* Bebas_Neue */ = {
+			isa = PBXGroup;
+			children = (
+				9EF62E9628CB62AF002853EA /* BebasNeue-Regular.ttf */,
+				9EF62E9728CB62AF002853EA /* OFL.txt */,
+			);
+			path = Bebas_Neue;
+			sourceTree = "<group>";
+		};
+		9EF62E9B28CC8B22002853EA /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				9EF62E9C28CC8B4A002853EA /* StandarTexField.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EF62E5E28CB4728002853EA /* PassWordManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF62E8328CB472A002853EA /* Build configuration list for PBXNativeTarget "PassWordManager" */;
+			buildPhases = (
+				9EF62E5B28CB4728002853EA /* Sources */,
+				9EF62E5C28CB4728002853EA /* Frameworks */,
+				9EF62E5D28CB4728002853EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassWordManager;
+			productName = PassWordManager;
+			productReference = 9EF62E5F28CB4728002853EA /* PassWordManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EF62E6E28CB4729002853EA /* PassWordManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF62E8628CB472A002853EA /* Build configuration list for PBXNativeTarget "PassWordManagerTests" */;
+			buildPhases = (
+				9EF62E6B28CB4729002853EA /* Sources */,
+				9EF62E6C28CB4729002853EA /* Frameworks */,
+				9EF62E6D28CB4729002853EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EF62E7128CB4729002853EA /* PBXTargetDependency */,
+			);
+			name = PassWordManagerTests;
+			productName = PassWordManagerTests;
+			productReference = 9EF62E6F28CB4729002853EA /* PassWordManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EF62E7828CB472A002853EA /* PassWordManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF62E8928CB472A002853EA /* Build configuration list for PBXNativeTarget "PassWordManagerUITests" */;
+			buildPhases = (
+				9EF62E7528CB472A002853EA /* Sources */,
+				9EF62E7628CB472A002853EA /* Frameworks */,
+				9EF62E7728CB472A002853EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EF62E7B28CB472A002853EA /* PBXTargetDependency */,
+			);
+			name = PassWordManagerUITests;
+			productName = PassWordManagerUITests;
+			productReference = 9EF62E7928CB472A002853EA /* PassWordManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EF62E5728CB4728002853EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					9EF62E5E28CB4728002853EA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					9EF62E6E28CB4729002853EA = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 9EF62E5E28CB4728002853EA;
+					};
+					9EF62E7828CB472A002853EA = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 9EF62E5E28CB4728002853EA;
+					};
+				};
+			};
+			buildConfigurationList = 9EF62E5A28CB4728002853EA /* Build configuration list for PBXProject "PassWordManager" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EF62E5628CB4728002853EA;
+			productRefGroup = 9EF62E6028CB4728002853EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EF62E5E28CB4728002853EA /* PassWordManager */,
+				9EF62E6E28CB4729002853EA /* PassWordManagerTests */,
+				9EF62E7828CB472A002853EA /* PassWordManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EF62E5D28CB4728002853EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF62E6A28CB4729002853EA /* Preview Assets.xcassets in Resources */,
+				9E3F10CA28CCAFE000401003 /* Poppins-Regular.ttf in Resources */,
+				9EF62E6728CB4729002853EA /* Assets.xcassets in Resources */,
+				9EF62E9828CB62AF002853EA /* BebasNeue-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF62E6D28CB4729002853EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF62E7728CB472A002853EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EF62E5B28CB4728002853EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E31A07128CF33D4005655D8 /* AcountInfo.swift in Sources */,
+				9EF62E9028CB594C002853EA /* LitlePlaineButton.swift in Sources */,
+				9E3F10E128CE31DC00401003 /* Profile.swift in Sources */,
+				9E31A06F28CF2FC4005655D8 /* DisplayAcount.swift in Sources */,
+				9E3F10E728CE3BE100401003 /* AddNew.swift in Sources */,
+				9E3F10D628CDA45600401003 /* LoginView.swift in Sources */,
+				9E31A06A28CE4095005655D8 /* UpdateAcount.swift in Sources */,
+				9E3F10AA28CCAA2400401003 /* InformationView.swift in Sources */,
+				9E3F10D828CDA6CF00401003 /* ForgotPassWordView.swift in Sources */,
+				9E31A07428CF3600005655D8 /* GenerateNiew.swift in Sources */,
+				9E31A06D28CE41EF005655D8 /* Acount.swift in Sources */,
+				9EF62E9228CB5A48002853EA /* Utiles.swift in Sources */,
+				9E3F10DF28CE2CBC00401003 /* EditProfile.swift in Sources */,
+				9E31A07728CF506E005655D8 /* Home.swift in Sources */,
+				9E3F10E428CE393400401003 /* SectionPtofile.swift in Sources */,
+				9E3F10D428CD9B9600401003 /* Register.swift in Sources */,
+				9E3F10A728CCA75D00401003 /* HeaderTitle.swift in Sources */,
+				9EF62E6528CB4728002853EA /* ContentView.swift in Sources */,
+				9EF62E6328CB4728002853EA /* PassWordManagerApp.swift in Sources */,
+				9EF62E9D28CC8B4A002853EA /* StandarTexField.swift in Sources */,
+				9EF62E9428CB5F4B002853EA /* modifier.swift in Sources */,
+				9E3F10DA28CDAA0A00401003 /* ResetPassWordView.swift in Sources */,
+				9E3F10DD28CE2B8C00401003 /* Profile+changePassword.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF62E6B28CB4729002853EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF62E7428CB472A002853EA /* PassWordManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF62E7528CB472A002853EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF62E7E28CB472A002853EA /* PassWordManagerUITests.swift in Sources */,
+				9EF62E8028CB472A002853EA /* PassWordManagerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EF62E7128CB4729002853EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EF62E5E28CB4728002853EA /* PassWordManager */;
+			targetProxy = 9EF62E7028CB4729002853EA /* PBXContainerItemProxy */;
+		};
+		9EF62E7B28CB472A002853EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EF62E5E28CB4728002853EA /* PassWordManager */;
+			targetProxy = 9EF62E7A28CB472A002853EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9EF62E8128CB472A002853EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9EF62E8228CB472A002853EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EF62E8428CB472A002853EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PassWordManager/Preview Content\"";
+				DEVELOPMENT_TEAM = YV2MS7RRD5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PassWordManager/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathis.PassWordManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EF62E8528CB472A002853EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PassWordManager/Preview Content\"";
+				DEVELOPMENT_TEAM = YV2MS7RRD5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PassWordManager/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathis.PassWordManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9EF62E8728CB472A002853EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YV2MS7RRD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathis.PassWordManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassWordManager.app/PassWordManager";
+			};
+			name = Debug;
+		};
+		9EF62E8828CB472A002853EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YV2MS7RRD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathis.PassWordManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassWordManager.app/PassWordManager";
+			};
+			name = Release;
+		};
+		9EF62E8A28CB472A002853EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YV2MS7RRD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathis.PassWordManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PassWordManager;
+			};
+			name = Debug;
+		};
+		9EF62E8B28CB472A002853EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YV2MS7RRD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathis.PassWordManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PassWordManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EF62E5A28CB4728002853EA /* Build configuration list for PBXProject "PassWordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF62E8128CB472A002853EA /* Debug */,
+				9EF62E8228CB472A002853EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EF62E8328CB472A002853EA /* Build configuration list for PBXNativeTarget "PassWordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF62E8428CB472A002853EA /* Debug */,
+				9EF62E8528CB472A002853EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EF62E8628CB472A002853EA /* Build configuration list for PBXNativeTarget "PassWordManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF62E8728CB472A002853EA /* Debug */,
+				9EF62E8828CB472A002853EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EF62E8928CB472A002853EA /* Build configuration list for PBXNativeTarget "PassWordManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF62E8A28CB472A002853EA /* Debug */,
+				9EF62E8B28CB472A002853EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EF62E5728CB4728002853EA /* Project object */;
+}
