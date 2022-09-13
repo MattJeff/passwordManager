@@ -14,4 +14,8 @@ struct Account:Identifiable{
     var link:String
     var email:String
     var passWord:String
+    var icone:String?
 }
+
+
+

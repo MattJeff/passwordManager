@@ -15,7 +15,6 @@
 		9E31A07728CF506E005655D8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31A07628CF506E005655D8 /* Home.swift */; };
 		9E3F10A728CCA75D00401003 /* HeaderTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10A628CCA75D00401003 /* HeaderTitle.swift */; };
 		9E3F10AA28CCAA2400401003 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10A928CCAA2400401003 /* InformationView.swift */; };
-		9E3F10CA28CCAFE000401003 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E3F10B728CCAFE000401003 /* Poppins-Regular.ttf */; };
 		9E3F10D428CD9B9600401003 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10D328CD9B9600401003 /* Register.swift */; };
 		9E3F10D628CDA45600401003 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10D528CDA45600401003 /* LoginView.swift */; };
 		9E3F10D828CDA6CF00401003 /* ForgotPassWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F10D728CDA6CF00401003 /* ForgotPassWordView.swift */; };
@@ -37,6 +36,10 @@
 		9EF62E9428CB5F4B002853EA /* modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E9328CB5F4B002853EA /* modifier.swift */; };
 		9EF62E9828CB62AF002853EA /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EF62E9628CB62AF002853EA /* BebasNeue-Regular.ttf */; };
 		9EF62E9D28CC8B4A002853EA /* StandarTexField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF62E9C28CC8B4A002853EA /* StandarTexField.swift */; };
+		EDA3E93228D1167F00F60C7E /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E93128D1167F00F60C7E /* AccountViewModel.swift */; };
+		EDA3E93528D1169900F60C7E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E93428D1169900F60C7E /* ProfileViewModel.swift */; };
+		EDA3E93828D116AE00F60C7E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E93728D116AE00F60C7E /* LoginViewModel.swift */; };
+		EDDD4BDF28D115E40091BEC8 /* Poppins in Resources */ = {isa = PBXBuildFile; fileRef = EDDD4BDE28D115E40091BEC8 /* Poppins */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,25 +68,6 @@
 		9E31A07628CF506E005655D8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		9E3F10A628CCA75D00401003 /* HeaderTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitle.swift; sourceTree = "<group>"; };
 		9E3F10A928CCAA2400401003 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
-		9E3F10AC28CCAFE000401003 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
-		9E3F10AD28CCAFE000401003 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
-		9E3F10AE28CCAFE000401003 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		9E3F10AF28CCAFE000401003 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
-		9E3F10B028CCAFE000401003 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
-		9E3F10B128CCAFE000401003 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
-		9E3F10B228CCAFE000401003 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		9E3F10B328CCAFE000401003 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		9E3F10B428CCAFE000401003 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
-		9E3F10B528CCAFE000401003 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
-		9E3F10B628CCAFE000401003 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
-		9E3F10B728CCAFE000401003 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
-		9E3F10B828CCAFE000401003 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
-		9E3F10B928CCAFE000401003 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		9E3F10BA28CCAFE000401003 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
-		9E3F10BB28CCAFE000401003 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
-		9E3F10BC28CCAFE000401003 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		9E3F10BD28CCAFE000401003 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
-		9E3F10BE28CCAFE000401003 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		9E3F10D328CD9B9600401003 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		9E3F10D528CDA45600401003 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9E3F10D728CDA6CF00401003 /* ForgotPassWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassWordView.swift; sourceTree = "<group>"; };
@@ -110,6 +94,10 @@
 		9EF62E9728CB62AF002853EA /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		9EF62E9A28CB62C7002853EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9EF62E9C28CC8B4A002853EA /* StandarTexField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandarTexField.swift; sourceTree = "<group>"; };
+		EDA3E93128D1167F00F60C7E /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		EDA3E93428D1169900F60C7E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		EDA3E93728D116AE00F60C7E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EDDD4BDE28D115E40091BEC8 /* Poppins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Poppins; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,32 +176,6 @@
 			path = INFORMATION;
 			sourceTree = "<group>";
 		};
-		9E3F10AB28CCAFE000401003 /* Poppins */ = {
-			isa = PBXGroup;
-			children = (
-				9E3F10AC28CCAFE000401003 /* Poppins-ExtraLight.ttf */,
-				9E3F10AD28CCAFE000401003 /* Poppins-ThinItalic.ttf */,
-				9E3F10AE28CCAFE000401003 /* Poppins-ExtraLightItalic.ttf */,
-				9E3F10AF28CCAFE000401003 /* Poppins-BoldItalic.ttf */,
-				9E3F10B028CCAFE000401003 /* Poppins-Light.ttf */,
-				9E3F10B128CCAFE000401003 /* Poppins-Medium.ttf */,
-				9E3F10B228CCAFE000401003 /* Poppins-SemiBoldItalic.ttf */,
-				9E3F10B328CCAFE000401003 /* Poppins-ExtraBoldItalic.ttf */,
-				9E3F10B428CCAFE000401003 /* Poppins-ExtraBold.ttf */,
-				9E3F10B528CCAFE000401003 /* Poppins-BlackItalic.ttf */,
-				9E3F10B628CCAFE000401003 /* OFL.txt */,
-				9E3F10B728CCAFE000401003 /* Poppins-Regular.ttf */,
-				9E3F10B828CCAFE000401003 /* Poppins-LightItalic.ttf */,
-				9E3F10B928CCAFE000401003 /* Poppins-Bold.ttf */,
-				9E3F10BA28CCAFE000401003 /* Poppins-Black.ttf */,
-				9E3F10BB28CCAFE000401003 /* Poppins-Thin.ttf */,
-				9E3F10BC28CCAFE000401003 /* Poppins-SemiBold.ttf */,
-				9E3F10BD28CCAFE000401003 /* Poppins-Italic.ttf */,
-				9E3F10BE28CCAFE000401003 /* Poppins-MediumItalic.ttf */,
-			);
-			path = Poppins;
-			sourceTree = "<group>";
-		};
 		9E3F10D228CD9B6400401003 /* Register_Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,7 +218,6 @@
 			isa = PBXGroup;
 			children = (
 				9EF62E6128CB4728002853EA /* PassWordManager */,
-				9E3F10AB28CCAFE000401003 /* Poppins */,
 				9EF62E9528CB62AF002853EA /* Bebas_Neue */,
 				9EF62E7228CB472A002853EA /* PassWordManagerTests */,
 				9EF62E7C28CB472A002853EA /* PassWordManagerUITests */,
@@ -277,6 +238,7 @@
 		9EF62E6128CB4728002853EA /* PassWordManager */ = {
 			isa = PBXGroup;
 			children = (
+				EDA3E93028D1166500F60C7E /* ViewModel */,
 				9EF62E9A28CB62C7002853EA /* Info.plist */,
 				9E31A06B28CE41E2005655D8 /* Model */,
 				9EF62E8C28CB5856002853EA /* Views */,
@@ -284,6 +246,7 @@
 				9EF62E6428CB4728002853EA /* ContentView.swift */,
 				9EF62E6628CB4729002853EA /* Assets.xcassets */,
 				9EF62E6828CB4729002853EA /* Preview Content */,
+				EDDD4BDE28D115E40091BEC8 /* Poppins */,
 			);
 			path = PassWordManager;
 			sourceTree = "<group>";
@@ -362,6 +325,16 @@
 				9EF62E9C28CC8B4A002853EA /* StandarTexField.swift */,
 			);
 			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		EDA3E93028D1166500F60C7E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDA3E93128D1167F00F60C7E /* AccountViewModel.swift */,
+				EDA3E93428D1169900F60C7E /* ProfileViewModel.swift */,
+				EDA3E93728D116AE00F60C7E /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,8 +441,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDDD4BDF28D115E40091BEC8 /* Poppins in Resources */,
 				9EF62E6A28CB4729002853EA /* Preview Assets.xcassets in Resources */,
-				9E3F10CA28CCAFE000401003 /* Poppins-Regular.ttf in Resources */,
 				9EF62E6728CB4729002853EA /* Assets.xcassets in Resources */,
 				9EF62E9828CB62AF002853EA /* BebasNeue-Regular.ttf in Resources */,
 			);
@@ -504,11 +477,14 @@
 				9E3F10D628CDA45600401003 /* LoginView.swift in Sources */,
 				9E31A06A28CE4095005655D8 /* UpdateAcount.swift in Sources */,
 				9E3F10AA28CCAA2400401003 /* InformationView.swift in Sources */,
+				EDA3E93828D116AE00F60C7E /* LoginViewModel.swift in Sources */,
 				9E3F10D828CDA6CF00401003 /* ForgotPassWordView.swift in Sources */,
 				9E31A07428CF3600005655D8 /* GenerateNiew.swift in Sources */,
+				EDA3E93228D1167F00F60C7E /* AccountViewModel.swift in Sources */,
 				9E31A06D28CE41EF005655D8 /* Acount.swift in Sources */,
 				9EF62E9228CB5A48002853EA /* Utiles.swift in Sources */,
 				9E3F10DF28CE2CBC00401003 /* EditProfile.swift in Sources */,
+				EDA3E93528D1169900F60C7E /* ProfileViewModel.swift in Sources */,
 				9E31A07728CF506E005655D8 /* Home.swift in Sources */,
 				9E3F10E428CE393400401003 /* SectionPtofile.swift in Sources */,
 				9E3F10D428CD9B9600401003 /* Register.swift in Sources */,
