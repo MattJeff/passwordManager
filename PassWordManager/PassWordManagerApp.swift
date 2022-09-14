@@ -11,7 +11,7 @@ import SwiftUI
 struct PassWordManagerApp: App {
     var body: some Scene {
         WindowGroup {
-            GenerateNiew()
+            ContentView()
         }
     }
 }

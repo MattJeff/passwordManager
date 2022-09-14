@@ -14,9 +14,12 @@ struct CustomTexField: View {
     @State var placeholder:String
     @State var erreur = false
     @State var show = true
+    @EnvironmentObject var manager:AccountManager
     var size = UIScreen.main.bounds
     var textFiedlType:TexFieldType
     var title:String?
+    
+    var validate: CreationError = .noError
     
     var body: some View {
       
@@ -26,7 +29,7 @@ struct CustomTexField: View {
                 Text(title ?? "")
                     .font(.custom("BebasNeue-Regular", size: 10)).padding(.leading,8)
             RoundedRectangle(cornerRadius: 10)
-                .stroke(Color(erreur ?  "Primary" : "background"),lineWidth: 2)
+                    .stroke(Color(validate == .noError ?  "background" : "Primary"),lineWidth: 2)
                 .frame(width: size.width/1.1 ,height: 40)
                 .modifier(TextFieldCustomStyle(placeholder: $placeholder, text: $text, show: $show, action:{}, type: textFiedlType))
             }

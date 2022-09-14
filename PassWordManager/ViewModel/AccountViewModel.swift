@@ -17,12 +17,12 @@ class AccountManager:ObservableObject{
     @Published var Email:String=""
     @Published var icon:String?
     
-    private var isSubmit = false
+    @Published var isSubmit = false
     
     func passWordIsValide()->CreationError{
         
         var  valeur:CreationError = .noError
-        if isSubmit && !self.passWord.isEmpty {
+        if isSubmit && self.passWord.isEmpty {
             
             valeur = .passwordError
         }
@@ -30,7 +30,7 @@ class AccountManager:ObservableObject{
     
     func AppNameIsValide()->CreationError{
         var  valeur:CreationError = .noError
-        if isSubmit && !self.AppName.isEmpty {
+        if isSubmit && self.AppName.isEmpty {
             
             valeur = .NameError
         }
@@ -39,17 +39,26 @@ class AccountManager:ObservableObject{
     
     
     func EmailIsValide()->CreationError{
+        
         var  valeur:CreationError = .noError
-        if isSubmit && !self.Email.isEmpty {
+        
+        if self.isSubmit && self.Email.isEmpty {
+   
             
             valeur = .emailError
+            
+            
         }
+        
     return valeur
+        
     }
     
     func AppLinkIsValid()->CreationError{
+        
         var  valeur:CreationError = .noError
-        if isSubmit && !self.Email.isEmpty {
+        
+        if isSubmit && self.AppLink.isEmpty {
             
             valeur = .linkError
         }
@@ -57,31 +66,39 @@ class AccountManager:ObservableObject{
     }
     
     
-    
-    
-    
-    func addAcount(){
+    func addAcount()->Bool{
     
         self.isSubmit = true
-        
+        var isAdd = false
         let Email = EmailIsValide()
         let Name = AppNameIsValide()
         let Link = AppLinkIsValid()
         let PassWord = passWordIsValide()
         
-        guard Email != .emailError else {return }
-        guard Name != .NameError else {return }
-        guard Link != .linkError else {return }
-        guard PassWord != .passwordError   else {return }
+        print("----------------------")
+        print(Email)
+        print(Name)
+        print(Link)
+        print(PassWord)
+        print("----------------------")
+        
+
+            guard Email != .emailError else {  return false }
+            guard Name != .NameError else {   return false }
+            guard Link != .linkError else {    return  false }
+            guard PassWord != .passwordError   else {  return false }
+        
+
         
         let account = Account(date: Date(), name: self.AppName, link: self.AppLink, email: self.Email, passWord: self.passWord)
         
+        isAdd = true
+        
         self.accounts.append(account)
         
+        self.isSubmit = false 
 
-    }
-    
-    
+    return isAdd}
     
     
     func UpdateAccount(){
@@ -91,17 +108,6 @@ class AccountManager:ObservableObject{
     func deleteAccount(){
         
     }
-    
-    enum CreationError{
-        
-        case linkError
-        case NameError
-        case passwordError
-        case emailError
-        case noError
-        
-    }
-    
     
     
     
@@ -117,9 +123,6 @@ class AccountManager:ObservableObject{
         let rndPswd = String((0..<length).map{ _ in base[Int(arc4random_uniform(UInt32(base.count)))]})
         
         self.passWord = rndPswd
-        
-
-        
         
     }
     

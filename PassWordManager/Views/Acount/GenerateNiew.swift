@@ -9,11 +9,18 @@ import SwiftUI
 
 struct GenerateNiew: View {
     @State var password:String = "I#f4H4@g"
+    @State var length = 8
+    @State var Withsymbole = false
+    @EnvironmentObject var manager:AccountManager
+    @Environment(\.presentationMode) var presented
     var body: some View {
     
         VStack(spacing:30){
             HStack{
             Image("Left")
+                    .onTapGesture {
+                        presented.wrappedValue.dismiss()
+                    }
                 Spacer()
             }
             
@@ -21,7 +28,7 @@ struct GenerateNiew: View {
             
                 .modifier(Title())
             HStack{
-                Text(password).padding()
+                Text(manager.passWord).padding()
                     .font(.custom("Poppins", size: 16))
                     .frame(maxWidth: .infinity,maxHeight: 40)
             }.background(RoundedRectangle(cornerRadius: 10)
@@ -33,10 +40,25 @@ struct GenerateNiew: View {
                     .padding(.leading,8)
                 HStack{
                     
-                    Text("8").padding(10)
+                    Text("\(length)").padding(10)
                         .font(.custom("Poppins", size: 16))
+                    
                     Spacer()
-                    Image("Dropdown").padding(.trailing)
+                    Menu {
+                        ForEach(8..<16) { val in
+                            
+                            Button {
+                                length = val
+                            } label: {
+                                Text("\(val)")
+                            }
+
+                        }
+                    } label: {
+                        Image("Dropdown").padding(.trailing)
+                    }
+
+                 
                        
                 }
                 
@@ -51,10 +73,27 @@ struct GenerateNiew: View {
                     .padding(.leading,8)
                 HStack{
                     
-                    Text("No").padding(10)
+                    Text(Withsymbole ? "YES" : "NO").padding(10)
                         .font(.custom("Poppins", size: 16))
                     Spacer()
-                    Image("Dropdown").padding(.trailing)
+                    Menu {
+                        Button {
+                            Withsymbole = true
+                        } label: {
+                            Text("YES")
+                        }
+
+                        Button {
+                            Withsymbole = false
+                        } label: {
+                            Text("NO")
+                        }
+
+                      
+                
+                    } label: {
+                        Image("Dropdown").padding(.trailing)
+                    }
                        
                 }
                 
@@ -65,7 +104,23 @@ struct GenerateNiew: View {
             
             HStack(spacing:space2button){
                 CustomButton(size: .small, text: "Randomize", buttonType: .strock)
-                CustomButton(size: .small, text: "Copy", buttonType: .plain)
+                    .onTapGesture {
+                        manager.generatePassword(length, Withsymbole)
+                    }
+                
+                Button {
+                    let pastBoard = UIPasteboard.general
+                    if !manager.passWord.isEmpty {
+                    pastBoard.string = manager.passWord
+                    }
+                    
+                } label: {
+                    
+                    CustomButton(size: .small, text: "Copy", buttonType: .plain)
+                    
+                }
+
+               
             }.padding(.horizontal)
             
         Spacer()

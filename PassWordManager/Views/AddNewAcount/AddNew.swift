@@ -13,6 +13,7 @@ struct AddNew: View {
     @State var URL:String=""
     @State var email:String=""
     @State var password:String=""
+    @State var generatePassword = false
     @EnvironmentObject var manager: AccountManager
     @Environment(\.presentationMode) var presented
     
@@ -33,20 +34,43 @@ struct AddNew: View {
      
                 VStack(spacing:20){
                 
-                    CustomTexField(text:$manager.AppName, placeholder: "Website/App Name", textFiedlType: .standarField, title: "Username")
-                    CustomTexField(text:$manager.AppLink, placeholder: "Website / App Link", textFiedlType: .standarField, title: "Username")
-                    CustomTexField(text: $manager.Email, placeholder: "Email / Username", textFiedlType: .standarField, title: "Email")
-                    CustomTexField(text: $manager.passWord, placeholder: "Password", textFiedlType: .secureField, title: "Password")
+                    CustomTexField(text:$manager.AppName, placeholder: "Website/App Name", textFiedlType: .standarField, title: "Username",validate: manager.AppNameIsValide())
+                        .environmentObject(manager)
+                    CustomTexField(text:$manager.AppLink, placeholder: "Website / App Link", textFiedlType: .standarField, title: "Username",validate: manager.AppLinkIsValid())
+                        .environmentObject(manager)
+                    CustomTexField(text: $manager.Email, placeholder: "Email / Username", textFiedlType: .standarField, title: "Email",validate: manager.EmailIsValide())
+                        .environmentObject(manager)
+                    CustomTexField(text: $manager.passWord, placeholder: "Password", textFiedlType: .secureField, title: "Password",validate: manager.passWordIsValide())
+                        .environmentObject(manager)
                 
                     HStack{
+                        
+                        Button {
+                            generatePassword.toggle()
+                        } label: {
+                            CustomButton(size: .small, text: "Generate New", buttonType: .strock)
+                        }.sheet(isPresented: $generatePassword) {
+                            GenerateNiew()
+                                .environmentObject(manager)
+                        }
                       
-                    CustomButton(size: .small, text: "Generate New", buttonType: .strock)
+            
                     }.padding()
                         .frame(width: screen.width/1.3, alignment: .trailing)
                 }
             
             Spacer()
-            CustomButton(size: .large, text: "Add password", buttonType: .plain)
+          
+
+            CustomButton(size: .large, text: "Add password", buttonType: .plain).onTapGesture {
+                
+               var isCompleted =  manager.addAcount()
+                print(manager.isSubmit)
+                if isCompleted{
+                    presented.wrappedValue.dismiss()
+                }
+                
+            }
         }.padding()
         }
         

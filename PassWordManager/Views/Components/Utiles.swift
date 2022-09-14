@@ -34,6 +34,18 @@ enum TexFieldType{
 }
 
 
+enum CreationError{
+    
+    case linkError
+    case NameError
+    case passwordError
+    case emailError
+    case noError
+    
+}
+
+
+
 var space2button = UIScreen.main.bounds.width/2.38
 var screen = UIScreen.main.bounds
 

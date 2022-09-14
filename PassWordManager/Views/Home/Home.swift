@@ -16,7 +16,9 @@ struct Home: View {
                 HStack{
                     Image("logo")
                         .renderingMode(.template)
-                        .foregroundColor(accountManager.EmailIsValide() == .emailError ? Color(.red) : Color(.green))
+                        .foregroundColor(Color("Primary"))
+                       
+                      
                       
                     Spacer()
                 }
