@@ -10,8 +10,9 @@ import SwiftUI
 
 
 struct ContentView: View {
+    
     @State var selected = "Home"
-   
+    @StateObject var countManager = AccountManager()
     var body: some View {
         
         ZStack{
@@ -19,6 +20,7 @@ struct ContentView: View {
             VStack{
                 TabView(selection: $selected) {
                     Home()
+                        .environmentObject(countManager)
                         .tag("Home")
                     Profile()
                         .tag("User")
@@ -28,6 +30,7 @@ struct ContentView: View {
             VStack{
                 Spacer()
             CustomTabBar(selectedtab: $selected)
+                    .environmentObject(countManager)
             }
         }
         
@@ -38,6 +41,7 @@ struct CustomTabBar:View{
     @Binding var selectedtab:String
     @Namespace var animation
     @State var showAdd = false
+    @EnvironmentObject var manager: AccountManager
     var body:some View{
         ZStack{
         HStack(spacing:UIScreen.main.bounds.width/2){
@@ -67,13 +71,8 @@ struct CustomTabBar:View{
                 }  .offset( y: -20)
             }.fullScreenCover(isPresented: $showAdd){
                 AddNew()
+                    .environmentObject(manager)
             }
-
-
-         
-            
-            
-            
             
         }.padding()
      

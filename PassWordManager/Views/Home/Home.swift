@@ -9,11 +9,15 @@ import SwiftUI
 
 struct Home: View {
     @State var text:String = ""
+    @EnvironmentObject var accountManager:AccountManager
     var body: some View {
         ScrollView(showsIndicators:false){
             VStack{
                 HStack{
                     Image("logo")
+                        .renderingMode(.template)
+                        .foregroundColor(accountManager.EmailIsValide() == .emailError ? Color(.red) : Color(.green))
+                      
                     Spacer()
                 }
                 HStack{

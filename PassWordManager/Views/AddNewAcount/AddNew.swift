@@ -13,7 +13,7 @@ struct AddNew: View {
     @State var URL:String=""
     @State var email:String=""
     @State var password:String=""
-    
+    @EnvironmentObject var manager: AccountManager
     @Environment(\.presentationMode) var presented
     
     var body: some View {
@@ -33,10 +33,10 @@ struct AddNew: View {
      
                 VStack(spacing:20){
                 
-                CustomTexField(text:$name, placeholder: "Website/App Name", textFiedlType: .standarField, title: "Username")
-                    CustomTexField(text:$URL, placeholder: "Website / App Link", textFiedlType: .standarField, title: "Username")
-                CustomTexField(text: $email, placeholder: "Email / Username", textFiedlType: .standarField, title: "Email")
-                CustomTexField(text: $password, placeholder: "Password", textFiedlType: .secureField, title: "Password")
+                    CustomTexField(text:$manager.AppName, placeholder: "Website/App Name", textFiedlType: .standarField, title: "Username")
+                    CustomTexField(text:$manager.AppLink, placeholder: "Website / App Link", textFiedlType: .standarField, title: "Username")
+                    CustomTexField(text: $manager.Email, placeholder: "Email / Username", textFiedlType: .standarField, title: "Email")
+                    CustomTexField(text: $manager.passWord, placeholder: "Password", textFiedlType: .secureField, title: "Password")
                 
                     HStack{
                       
