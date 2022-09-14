@@ -7,14 +7,17 @@
 
 import SwiftUI
 
-struct LoginViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class AuthManager:ObservableObject{
+    
+    func SignIn(){
+        
     }
-}
-
-struct LoginViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginViewModel()
+    
+    func SignUp(){
+         
+    }
+    
+    func LogOut(){
+        
     }
 }

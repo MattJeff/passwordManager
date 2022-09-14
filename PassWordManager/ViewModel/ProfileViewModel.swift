@@ -7,14 +7,19 @@
 
 import SwiftUI
 
-struct ProfileViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class ProfileManager:ObservableObject{
+    
+    func ChangePassWord(){
+        
     }
-}
-
-struct ProfileViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileViewModel()
+    
+    func ChangeName(){
+        
     }
+    
+    func ChangeImage(){
+        
+    }
+    
+    
 }
