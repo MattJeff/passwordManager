@@ -22,13 +22,17 @@ struct Home: View {
                 }.padding(.top)
                 CustomTexField(text: $text, placeholder: "Search Websites...", textFiedlType:.searchField )
                     .padding(.top)
-                VStack{
-                AccountRow()
-                AccountRow()
-                AccountRow()
-                AccountRow()
-                AccountRow()
-                }.padding(.top)
+  
+                    VStack{
+                   
+                            ForEach(0..<5,id:\.self) { i in
+                               AccountRow()
+                            }
+                        
+                        
+                        
+                    }.padding(.top)
+                
                 Spacer()
             }.padding()
         }

@@ -56,7 +56,7 @@ struct Profile: View {
                 }.fullScreenCover(isPresented: $showChangePassWord) {
                     Profile_changePassword()
                 }
-                Button {
+              /*  Button {
            
                 } label: {
                     sectionPorfile(image: "Edit", text: "Autofil Setttings")
@@ -65,12 +65,17 @@ struct Profile: View {
                     
                 } label: {
                     sectionPorfile(image: "Moon", text: "Switch to Dark Mode")
-                }
+                }*/
 
                
             }
+            Button {
+                
+            } label: {
+                sectionPorfile(image: "Logout", text: "Logout")
+            }
+
             
-            sectionPorfile(image: "Logout", text: "Logout")
          
             
             Spacer()

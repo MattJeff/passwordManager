@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
 struct Account:Identifiable{
     var id = UUID()
@@ -14,4 +15,12 @@ struct Account:Identifiable{
     var link:String
     var email:String
     var passWord:String
+}
+
+struct User:Identifiable{
+    
+    @DocumentID var id:String?
+    var username:String
+    var email:String
+    var profileImageURL:String
 }

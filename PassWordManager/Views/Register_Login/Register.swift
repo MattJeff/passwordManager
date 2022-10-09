@@ -13,6 +13,7 @@ struct Register: View {
     @State var email:String=""
     @State var password:String=""
     @State var showLogin = false
+    @EnvironmentObject var Authmanager: AuthViewModel
     
     var body: some View {
         VStack(spacing:32){
@@ -42,8 +43,15 @@ struct Register: View {
             CustomTexField(text: $username, placeholder: "username123", textFiedlType: .standarField, title: "Username")
             CustomTexField(text: $email, placeholder: "Email", textFiedlType: .standarField, title: "Email")
             CustomTexField(text: $password, placeholder: "Password", textFiedlType: .secureField, title: "Password")
+                
+                Button {
+                    Authmanager.register(withEmail: email, password: password, username: username)
+                } label: {
+                    CustomButton(size: .large, text: "Register", buttonType: .plain)
+                }
+
             
-                CustomButton(size: .large, text: "Register", buttonType: .plain)
+              
                
             }
             
@@ -60,6 +68,7 @@ struct Register: View {
                             .foregroundColor(Color("Primary"))
                 }.fullScreenCover(isPresented: $showLogin) {
                     LoginView()
+                        .environmentObject(Authmanager)
                 }
 
            

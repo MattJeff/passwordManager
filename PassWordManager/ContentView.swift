@@ -11,7 +11,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selected = "Home"
-   
+    let user:User?
     var body: some View {
         
         ZStack{
@@ -118,7 +118,7 @@ extension View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(user: User(username:"Mathis",email: "email",profileImageURL: "svksdkvb"))
     }
 }
 

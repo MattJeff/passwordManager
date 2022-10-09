@@ -13,6 +13,7 @@ struct LoginView: View {
     @State var password:String=""
     @State var showRegister = false
     @State var forgotPassword = false
+    @EnvironmentObject var Authmanager: AuthViewModel
     
     var body: some View {
         VStack(spacing:32){
@@ -52,8 +53,13 @@ struct LoginView: View {
                     ForgotPassWordView()
                 }
 
-            
-                CustomButton(size: .large, text: "Login", buttonType: .plain)
+                Button {
+                    Authmanager.login(withEmail: email, password: password)
+                } label: {
+                    CustomButton(size: .large, text: "Login", buttonType: .plain)
+                }
+
+              
                
             }
             
@@ -69,14 +75,12 @@ struct LoginView: View {
                             .foregroundColor(Color("Primary"))
                 }.fullScreenCover(isPresented: $showRegister) {
                     Register()
+                        .environmentObject(Authmanager)
                 }
 
           
             }.padding(.vertical)
            
-        
-          
-            
             Spacer()
         }.padding()
     }
